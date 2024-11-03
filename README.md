@@ -40,5 +40,12 @@ FPGAs are integrated circuits that can be reconfigured to meet the designers' ne
 - Upload (iceprog) to your FPGA
 > with `YAPIO` it calls all the above low-level tools for us so we don't have to worry much
 
- 
+ # [Installing to get started](https://youtu.be/gtkQ84Euyww?si=WTLcoFpK9YusJ3oJ)
 
+ 1. `python --versoin`
+ 2. `python -m pip install apio=0.6.7`
+    - if you encounter an error try to run your termainl as an administrator
+3. verify: `apio --version`
+4. tooling: `apio install --all` 
+5. install necessary drivers: `apio install driver`
+6. in case of ftdi: `apio drivers --ftdi-enable`
