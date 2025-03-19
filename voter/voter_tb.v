@@ -1,38 +1,14 @@
-// testnemch for the voter
+// simple verilog voter
 
-`timescale  1ns /1ps
-
-module test;  
-
-    reg a, b, c;  //UUT inputs
-    wire v;       // UUT output
-
-    // Instantiate the voter module
-    voter uut (
-        .a(a),
-        .b(b),
-        .c(c),
-        .y(v)
+`timescale  1ns /1ps 
+ 
+ module voter (
+    input wire a,
+    input wire b,
+    input wire c,
+    output wire y
     );
+    
+    assign y = a & b | a & c | b & c;
 
-
-    always #8 a = ~a;
-    always #4 b = ~b; 
-    always #2 c = ~c;
-
-    initial begin
-        a = 0; 
-        b = 0;
-        c = 0;
-
-        $dumpfile("voter_tb.vcd");
-        $dumpvars(0, test);
-
-        #16 $finish;
-    end    
-
-endmodule
-
-
-
-        
+ endmodule
