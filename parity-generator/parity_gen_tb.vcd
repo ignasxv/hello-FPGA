@@ -1,5 +1,5 @@
 $date
-	Wed Mar 19 07:10:18 2025
+	Wed Mar 19 09:10:13 2025
 $end
 $version
 	Icarus Verilog
@@ -9,11 +9,13 @@ $timescale
 $end
 $scope module test $end
 $var wire 8 ! pdata [7:0] $end
-$var reg 7 " tt_in [6:0] $end
+$var reg 1 " p $end
+$var reg 7 # tt_in [6:0] $end
 $scope module UUT $end
-$var wire 7 # tt_in [6:0] $end
-$var wire 8 $ pdata [7:0] $end
-$var wire 1 % par $end
+$var wire 1 " p $end
+$var wire 7 $ tt_in [6:0] $end
+$var wire 8 % pdata [7:0] $end
+$var reg 1 & par $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -22,65 +24,83 @@ $dumpall
 $end
 #0
 $dumpvars
-0%
+0&
+b0 %
 b0 $
 b0 #
-b0 "
+0"
 b0 !
 $end
 #2000
-1%
+1&
 b10000001 !
-b10000001 $
-b1 "
+b10000001 %
 b1 #
+b1 $
+#3000
+b1 !
+b1 %
+0&
+1"
 #4000
-b10000010 !
-b10000010 $
-b10 "
+b10 !
+b10 %
 b10 #
+b10 $
 #6000
-0%
 b11 !
-b11 $
-b11 "
+b11 %
 b11 #
+b11 $
+0"
 #8000
-1%
+1&
 b10000100 !
-b10000100 $
-b100 "
+b10000100 %
 b100 #
+b100 $
+#9000
+b100 !
+b100 %
+0&
+1"
 #10000
-0%
-b101 !
-b101 $
-b101 "
+1&
+b10000101 !
+b10000101 %
 b101 #
+b101 $
 #12000
+0&
 b110 !
-b110 $
-b110 "
+b110 %
 b110 #
+b110 $
+0"
 #14000
-1%
+1&
 b10000111 !
-b10000111 $
-b111 "
+b10000111 %
 b111 #
+b111 $
+#15000
+b111 !
+b111 %
+0&
+1"
 #16000
-b10001000 !
-b10001000 $
-b1000 "
+b1000 !
+b1000 %
 b1000 #
+b1000 $
 #18000
-0%
 b1001 !
-b1001 $
-b1001 "
+b1001 %
 b1001 #
+b1001 $
+0"
 #20000
 b1010 !
-b1010 $
-b1010 "
+b1010 %
 b1010 #
+b1010 $

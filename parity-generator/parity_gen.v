@@ -11,7 +11,6 @@ module par_gen (
     reg par; // parity bit
 
     always @* par = p ? ~^tt_in : ^tt_in; // XOR
-
     assign pdata = {par, tt_in}; // add parity bit to data
     
 endmodule
