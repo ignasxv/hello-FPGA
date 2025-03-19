@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.121 (w)1999-2024 BSI
+[*] Wed Mar 19 01:28:19 2025
+[*]
+[dumpfile] "/home/ignasxv/lab3/toturial/hello-fpga/voter/voter_tb.vcd"
+[dumpfile_mtime] "Wed Mar 19 01:08:39 2025"
+[dumpfile_size] 540
+[savefile] "/home/ignasxv/lab3/toturial/hello-fpga/voter/voter.gtkw"
+[timestart] 0
+[size] 1499 600
+[pos] -162 -1
+*-11.707355 14860 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 272
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 150
+@28
+test.a
+test.b
+test.c
+test.v
+[pattern_trace] 1
+[pattern_trace] 0
