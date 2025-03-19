@@ -6,20 +6,20 @@
 #the output is sent to stdout
 #
 
-cktdir=/home/saab/318Exm/vending
+cktdir=/home/iak36/hello-FPGA/testqh
 
 elsyn << //EOF
 read  /mgc/Leonardo/lib/ami05_typ.syn
 #read /mgc/Leonardo/lib/tsmc035_typ.syn
 
-read {$cktdir/vend.v}
+read {$cktdir/voter.v}
 
 pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize
 pre_optimize -extract
 optimize -macro -auto -effort quick -hierarchy auto
 
-optimize .work.FSM.INTERFACE -macro -auto -effort quick -hierarchy auto
-optimize_timing .work.FSM.INTERFACE
+optimize .work.voter.INTERFACE -macro -auto -effort quick -hierarchy auto
+optimize_timing .work.voter.INTERFACE
 set edif_write_arrays FALSE
 
 write -downto PRIMITIVES -format vhdl   Proc.vhd
