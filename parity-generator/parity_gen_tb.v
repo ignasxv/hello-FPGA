@@ -11,6 +11,7 @@ module test;
         .pdata(pdata)
     );
 
+    // test data
     always #2 tt_in = tt_in + 1;
         
     initial begin
@@ -23,6 +24,5 @@ module test;
         $monitor("%b %b", tt_in, pdata);
         #20 $finish;
     end 
-
     
 endmodule
