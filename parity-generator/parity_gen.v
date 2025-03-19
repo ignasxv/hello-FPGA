@@ -8,7 +8,8 @@ module par_gen (
     output wire [7:0] pdata
 );
 
-    wire par; 
+    always @* par = p ? ~^tt_in : ^tt_in; // XOR
+
     assign par = ^tt_in; // XOR 
     assign pdata = {par, tt_in}; // add parity bit to data
     
