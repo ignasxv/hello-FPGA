@@ -25,7 +25,7 @@ module test;
         $dumpvars(0, test);
         $display("\np, tt_in, pdata");
         
-        $monitor("%b %b %b", p, tt_in, pdata);
+        $monitor("%b %b %b %d", p, tt_in, pdata, pdata);
         #20 $finish;
     end 
     
