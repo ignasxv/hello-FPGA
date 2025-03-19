@@ -9,5 +9,6 @@ module par_gen (
 
     wire par; 
     assign par = ^tt_in; // XOR 
+    assign pdata = {par, tt_in}; // add parity bit to data
     
 endmodule
