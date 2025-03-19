@@ -7,39 +7,61 @@
 :vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/ivl/va_math.vpi";
-S_0x56715af9f620 .scope module, "test" "test" 2 5;
+S_0x56f4d6bb6a00 .scope module, "test" "test" 2 5;
  .timescale -9 -12;
-v0x56715afb0ad0_0 .net "pdata", 7 0, L_0x56715afb0d50;  1 drivers
-v0x56715afb0b90_0 .var "tt_in", 6 0;
-S_0x56715af9f7b0 .scope module, "UUT" "par_gen" 2 9, 3 5 0, S_0x56715af9f620;
+v0x56f4d6bc8430_0 .net "pdata", 7 0, L_0x56f4d6bc85c0;  1 drivers
+v0x56f4d6bc84f0_0 .var "tt_in", 6 0;
+S_0x56f4d6bb6b90 .scope module, "UUT" "par_gen" 2 9, 3 5 0, S_0x56f4d6bb6a00;
  .timescale 0 0;
     .port_info 0 /INPUT 7 "tt_in";
-    .port_info 1 /OUTPUT 8 "pdata";
-v0x56715af9f990_0 .net "par", 0 0, L_0x56715afb0c30;  1 drivers
-v0x56715afb08d0_0 .net "pdata", 7 0, L_0x56715afb0d50;  alias, 1 drivers
-v0x56715afb09b0_0 .net "tt_in", 6 0, v0x56715afb0b90_0;  1 drivers
-L_0x56715afb0c30 .reduce/xor v0x56715afb0b90_0;
-L_0x56715afb0d50 .concat [ 7 1 0 0], v0x56715afb0b90_0, L_0x56715afb0c30;
-    .scope S_0x56715af9f620;
+    .port_info 1 /INPUT 1 "p";
+    .port_info 2 /OUTPUT 8 "pdata";
+o0x796a412cc018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x56f4d6bb6dc0_0 .net "p", 0 0, o0x796a412cc018;  0 drivers
+v0x56f4d6bc8150_0 .var "par", 0 0;
+v0x56f4d6bc8210_0 .net "pdata", 7 0, L_0x56f4d6bc85c0;  alias, 1 drivers
+v0x56f4d6bc82d0_0 .net "tt_in", 6 0, v0x56f4d6bc84f0_0;  1 drivers
+E_0x56f4d6bb6280 .event anyedge, v0x56f4d6bb6dc0_0, v0x56f4d6bc82d0_0;
+L_0x56f4d6bc85c0 .concat [ 7 1 0 0], v0x56f4d6bc84f0_0, v0x56f4d6bc8150_0;
+    .scope S_0x56f4d6bb6b90;
 T_0 ;
-    %delay 2000, 0;
-    %load/vec4 v0x56715afb0b90_0;
-    %addi 1, 0, 7;
-    %store/vec4 v0x56715afb0b90_0, 0, 7;
+    %wait E_0x56f4d6bb6280;
+    %load/vec4 v0x56f4d6bb6dc0_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_0.0, 8;
+    %load/vec4 v0x56f4d6bc82d0_0;
+    %xnor/r;
+    %jmp/1 T_0.1, 8;
+T_0.0 ; End of true expr.
+    %load/vec4 v0x56f4d6bc82d0_0;
+    %xor/r;
+    %jmp/0 T_0.1, 8;
+ ; End of false expr.
+    %blend;
+T_0.1;
+    %store/vec4 v0x56f4d6bc8150_0, 0, 1;
     %jmp T_0;
-    .thread T_0;
-    .scope S_0x56715af9f620;
+    .thread T_0, $push;
+    .scope S_0x56f4d6bb6a00;
 T_1 ;
-    %pushi/vec4 0, 0, 7;
-    %store/vec4 v0x56715afb0b90_0, 0, 7;
-    %vpi_call 2 19 "$dumpfile", "parity_gen_tb.vcd" {0 0 0};
-    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56715af9f620 {0 0 0};
-    %vpi_call 2 21 "$display", "\012tt_in, pdata" {0 0 0};
-    %vpi_call 2 23 "$monitor", "%b %b", v0x56715afb0b90_0, v0x56715afb0ad0_0 {0 0 0};
-    %delay 20000, 0;
-    %vpi_call 2 24 "$finish" {0 0 0};
-    %end;
+    %delay 2000, 0;
+    %load/vec4 v0x56f4d6bc84f0_0;
+    %addi 1, 0, 7;
+    %store/vec4 v0x56f4d6bc84f0_0, 0, 7;
+    %jmp T_1;
     .thread T_1;
+    .scope S_0x56f4d6bb6a00;
+T_2 ;
+    %pushi/vec4 0, 0, 7;
+    %store/vec4 v0x56f4d6bc84f0_0, 0, 7;
+    %vpi_call 2 20 "$dumpfile", "parity_gen_tb.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56f4d6bb6a00 {0 0 0};
+    %vpi_call 2 22 "$display", "\012tt_in, pdata" {0 0 0};
+    %vpi_call 2 24 "$monitor", "%b %b", v0x56f4d6bc84f0_0, v0x56f4d6bc8430_0 {0 0 0};
+    %delay 20000, 0;
+    %vpi_call 2 25 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
