@@ -5,7 +5,7 @@ FPGAs are integrated circuits that can be reconfigured to meet the designers' ne
 - allows you to design custom digital logic
 ## Parts of an FPGA
 - made up of multiple logic celss, the fundamental building blocks of digital circuits.  
-- you could use FPGA to buid your own processor (soft-core processor). could even create multiple processors (soft-core) depending on how much space you have in your FPGA fabric
+- you could use FPGA to buid your own processor (soft-core processor). could even create multiple processors (soft-core) depending on how much space you haclve in your FPGA fabric
 
 ## why use an FPGA
 - custom, reconfigurable digital logic circuits
