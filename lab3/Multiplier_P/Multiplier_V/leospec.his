@@ -1,35 +1,68 @@
-#!/bin/sh
-#cktfile must contain list of all the verilog file needed to
-#contruct the design
 #
-#this script takes ckts in cktfile runs them through vpp
-#the output is sent to stdout
 #
-
-cktdir=/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V
-
-elsyn << //EOF
+# /mgc/Leonardo/bin/Linux/spectrum 
+# Thu Mar 20 10:44:03 2025
 read  /mgc/Leonardo/lib/ami05_typ.syn
+
 #read /mgc/Leonardo/lib/tsmc035_typ.syn
 
-read {$cktdir/multiplier.v}
+
+
+read {/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/multiplier.v}
+
+### Previous Command Failed
+
+
 
 pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize
+
+### Previous Command Failed
+
 pre_optimize -extract
+
+### Previous Command Failed
+
 optimize -macro -auto -effort quick -hierarchy auto
 
+### Previous Command Failed
+
+
+
 optimize .work.multiplier.INTERFACE -macro -auto -effort quick -hierarchy auto
+
+### Previous Command Failed
+
 optimize_timing .work.multiplier.INTERFACE
+
+### Previous Command Failed
+
 set edif_write_arrays FALSE
 
+
+
 write -downto PRIMITIVES -format vhdl   Proc.vhd
+
+### Previous Command Failed
+
 write -downto PRIMITIVES -format edif   Proc.edf
+
+### Previous Command Failed
+
 write -downto PRIMITIVES -format verilog  Proc.v
+
+### Previous Command Failed
+
 #write -format verilog  Proc.v
+
 write -format SDF -downto PRIMITIVES Proc.sdf
+
+### Previous Command Failed
+
 set report_file_name CriticalPath
+
 report_delay -num_paths 1 -show_schematic 1 -critical_paths 
+
+### Previous Command Failed
+
 exit
-//EOF
-        echo "// End >>> $cktdir/$ckt <<<"
-exit
+
