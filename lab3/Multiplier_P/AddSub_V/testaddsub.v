@@ -78,7 +78,7 @@ module testaddsub;
     control = 0;                   // Addition mode$
 
     #10;
-    #50 $finish;
+    $finish;
   end
 
 endmodule
