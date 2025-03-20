@@ -1,0 +1,54 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)" "(v12_0-dirty)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/ivl/system.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/ivl/va_math.vpi";
+S_0x622eda97e690 .scope module, "testRTL_multiply" "testRTL_multiply" 2 3;
+ .timescale -9 -12;
+v0x622eda991250_0 .var "multiplicand", 3 0;
+v0x622eda991310_0 .var "multiplier", 3 0;
+v0x622eda9913b0_0 .net "product", 7 0, L_0x622eda991730;  1 drivers
+S_0x622eda97e820 .scope module, "uut" "RTL_multiply" 2 13, 3 3 0, S_0x622eda97e690;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "multiplicand";
+    .port_info 1 /INPUT 4 "multiplier";
+    .port_info 2 /OUTPUT 8 "product";
+v0x622eda945170_0 .net *"_ivl_0", 7 0, L_0x622eda991480;  1 drivers
+L_0x74cb100cd018 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0x622eda990c60_0 .net *"_ivl_3", 3 0, L_0x74cb100cd018;  1 drivers
+v0x622eda990d40_0 .net *"_ivl_4", 7 0, L_0x622eda9915f0;  1 drivers
+L_0x74cb100cd060 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0x622eda990e00_0 .net *"_ivl_7", 3 0, L_0x74cb100cd060;  1 drivers
+v0x622eda990ee0_0 .net "multiplicand", 3 0, v0x622eda991250_0;  1 drivers
+v0x622eda991010_0 .net "multiplier", 3 0, v0x622eda991310_0;  1 drivers
+v0x622eda9910f0_0 .net "product", 7 0, L_0x622eda991730;  alias, 1 drivers
+L_0x622eda991480 .concat [ 4 4 0 0], v0x622eda991250_0, L_0x74cb100cd018;
+L_0x622eda9915f0 .concat [ 4 4 0 0], v0x622eda991310_0, L_0x74cb100cd060;
+L_0x622eda991730 .arith/mult 8, L_0x622eda991480, L_0x622eda9915f0;
+    .scope S_0x622eda97e690;
+T_0 ;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0x622eda991250_0, 0, 4;
+    %pushi/vec4 3, 0, 4;
+    %store/vec4 v0x622eda991310_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 25 "$display", "Test RTL 1: %d * %d = %d", v0x622eda991250_0, v0x622eda991310_0, v0x622eda9913b0_0 {0 0 0};
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0x622eda991250_0, 0, 4;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v0x622eda991310_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 31 "$display", "Test RTL 2: %d * %d = %d", v0x622eda991250_0, v0x622eda991310_0, v0x622eda9913b0_0 {0 0 0};
+    %vpi_call 2 33 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testRTL_multiplier.v";
+    "RTL_multiplier.v";
