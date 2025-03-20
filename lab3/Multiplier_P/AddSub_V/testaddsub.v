@@ -23,18 +23,20 @@ module testaddsub;
   initial begin
       $dumpfile("testaddsub.vcd");
     $dumpvars(0, testaddsub); 
-    
-    $display(" a3a2a1a0  b3b2b1b0  control  |  co r3r2r1r0 ");
+
+    $display(" a3a2a1a0  b3b2b1b0  control  |  co r3r2r1r0 | num1 | num2 ");
     $display("-----------------------------------------");
   end
 
   // Monitor the signals (each concatenated for clarity)
   initial begin
-    $monitor("   %b%b%b%b     %b%b%b%b      %b     |   %b %b%b%b%b",
+    assign reg num1 = {a3, a2, a1, a0};
+    assign reg num2 = {b3, b2, b1, b0};
+    $monitor("   %b%b%b%b     %b%b%b%b      %b     |   %b %b%b%b%b | %d | %d",
              a3, a2, a1, a0,
              b3, b2, b1, b0,
              control,
-             co, r3, r2, r1, r0);
+             co, r3, r2, r1, r0, num1, num2);
   end
 
   // Apply test cases
