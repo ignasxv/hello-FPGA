@@ -1,4 +1,0 @@
-# vsim -c multiplier 
-# ** Error: (vsim-19) Failed to access library 'work' at "work".
-# No such file or directory. (errno = ENOENT)
-# Error loading design
