@@ -1,0 +1,398 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis
+vaddsub
+I`bD3z=nXGnKTZ:5I?D>6Q0
+Vk<R1IDTK[z3?Td?>^alLJ0
+Z1 w1742482823
+Z2 8multiplier.v
+Z3 Fmultiplier.v
+L0 48
+Z4 OL;L;6.5f;42
+r1
+31
+Z5 o-L mtiAvm -L mtiOvm -L mtiUPF
+!s100 Q4EgYD050lC]A6:0?4z222
+!s85 0
+vand04
+!s100 KBUW_;aL8=C7zB0]zzF_d2
+Igfg7FDFd?8YA]BL<Dl<jC1
+VNm5c470n9XEg0gWV28hIo1
+Z6 w1742486976
+Z7 8Proc.v
+Z8 FProc.v
+L0 220
+R4
+r1
+!s85 0
+31
+R5
+vao21
+!s100 S>AHRkXb<hbYHIL3fkW_21
+IBjmkcVz:@]GL2d`68098N2
+VUzI6_`Nf1i_@5>;i:f?Wk3
+R6
+R7
+R8
+L0 475
+R4
+r1
+!s85 0
+31
+R5
+vao22
+!s100 =[LoPXBMOz8D0dlHLVP^92
+IAXNK0Ag>0`H?:md=U2j583
+VCNT>McfnUEV3O69cGG5=Y1
+R6
+R7
+R8
+L0 408
+R4
+r1
+!s85 0
+31
+R5
+vaoi22
+!s100 gS[UM:75hm[fH^SSkJ`>>2
+I;89AlXUh0N[^nfmQz5U`g0
+VzZ1V22Ibm_E8lAb<e^`]`1
+R6
+R7
+R8
+L0 277
+R4
+r1
+!s85 0
+31
+R5
+vbuf02
+!s100 P77SCDmXmY@HcHh=hb3^_1
+Ie3[Cm6YM1ijoiX9lJ>T>42
+Ve5U[CQg6DnbTd5cWn2VOz1
+R6
+R7
+R8
+L0 253
+R4
+r1
+!s85 0
+31
+R5
+vdff
+!s100 1mGXPf`VUbPXhfJ?8VlUh1
+I5<ZjlCNLXPb_gVUBfZOK@0
+V5EC9Bl53b[V3E^W@<EI]g2
+R6
+R7
+R8
+L0 444
+R4
+r1
+!s85 0
+31
+R5
+vdffr
+!s100 4hPk_LF?9;WkHgG2GNz;h2
+I<U?UAcn:`n2I=6lTigP@a0
+VnXgI8mKNX1gYd9`:lMhOi0
+R6
+R7
+R8
+L0 532
+R4
+r1
+!s85 0
+31
+R5
+vDFFRS
+!s100 E^STH5TWH0[dZgMcDndEg0
+IMWzA^=@D@DV]=<3Jo9:c:0
+Vb8^S9kRbzel]C2ZjU0aka0
+R6
+R7
+R8
+L0 550
+R4
+r1
+!s85 0
+31
+R5
+n@d@f@f@r@s
+vFSM
+I0WfbDUX]Rk5PRd?l@8ifV1
+V==TW9a^f?aHE2PoOn]z251
+R1
+R2
+R3
+L0 55
+R4
+r1
+31
+R5
+n@f@s@m
+!s100 CJ^5m6PDFASMdOJ@>U77Q1
+!s85 0
+vinv02
+!s100 YNBm4VInOokQMC72zLMOJ0
+I:<>1zSM`3fk^ST2k_OL]Y2
+VQl7nThc@:0dlm>RDMAY[`3
+R6
+R7
+R8
+L0 265
+R4
+r1
+!s85 0
+31
+R5
+vmultiplier
+!s100 hiUamGnoR1aRl[oRz^D9]2
+IL0_=TFGVUBCY9EKc[89eR3
+V<I`1MO:LRPl5[VWCV5Lhg1
+R6
+R7
+R8
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+vmux21_ni
+!s100 `;^i885?_mMZ0C@nm_HkC2
+I53zK3_EBkLXbVAH``4TLK2
+VH18XhKHk_EK6]^Xf6m=]W2
+R6
+R7
+R8
+L0 426
+R4
+r1
+!s85 0
+31
+R5
+vnand02_2x
+!s100 BYEKblN`3f31g7F;D34Am3
+I2OzLKhe9]S31LA8]7Gz7[1
+V_TgGEO`V^FWg6TIjRSlUi1
+R6
+R7
+R8
+L0 379
+R4
+r1
+!s85 0
+31
+R5
+vnand03
+!s100 fd_>5MFeD7IIN8C2L>8@K3
+Ig[I]YVd<TY02z7PC8721_2
+V6Lf8N5TXDfc]HBZVmB2j;3
+R6
+R7
+R8
+L0 491
+R4
+r1
+!s85 0
+31
+R5
+vnand04
+!s100 I<1ZM3`zm`H1KQF=iOS_l1
+IgEU6UlJIze2kA2BILJHkY1
+V6JjXU_NK3]2OTooB]nVD20
+R6
+R7
+R8
+L0 357
+R4
+r1
+!s85 0
+31
+R5
+vnor02_2x
+!s100 A4;YnX;?0gioP9bcPid[G3
+IhYi<cZYRnUa61Q=N17P^G1
+VY9U<]N`IN5k9gejiHK;@X2
+R6
+R7
+R8
+L0 303
+R4
+r1
+!s85 0
+31
+R5
+vnor02ii
+!s100 MjI`N?;567?T9[;2TQTFd1
+IldK4ff<;ejm@Yn65Bk<@[1
+V`S67?P8>=;a6RFjlP0i480
+R6
+R7
+R8
+L0 238
+R4
+r1
+!s85 0
+31
+R5
+vnor03
+!s100 e=MTL7NPaUeVN?ZbDoRze3
+IKASjfR0EUjI6I_U]7Nz^I1
+VJDM0Xna=54MbJa5Hck9601
+R6
+R7
+R8
+L0 338
+R4
+r1
+!s85 0
+31
+R5
+vnor03_2x
+!s100 h_2k@3]Y1[<5M]82QJ1iK2
+IMho:_5MV_mU2KI>iJT6;?3
+VlK8Y9=m_1b6Q`3W8O2eGW1
+R6
+R7
+R8
+L0 201
+R4
+r1
+!s85 0
+31
+R5
+vnor04
+!s100 Bz`@XH?WLSmdlSS4^V4fF2
+I4N?mYaBbTOCDPUNDR=0X40
+VhPid341mLlVcQkS?WDJLO1
+R6
+R7
+R8
+L0 510
+R4
+r1
+!s85 0
+31
+R5
+voai21
+!s100 Y]zAN`F95RfBlE_=B1hO83
+I=KD`P4@A?ZPK`i9;7^@kG2
+V@MbM68fLmB=9WaeiiHc8W0
+R6
+R7
+R8
+L0 319
+R4
+r1
+!s85 0
+31
+R5
+vor03
+!s100 PB]95kRG0B[XKB;VS4LEB1
+Ij4`m8m7Nh^=e82n:8;bM90
+V7TjNH2n8i]b9:c4Iz8E>J2
+R6
+R7
+R8
+L0 167
+R4
+r1
+!s85 0
+31
+R5
+vor04
+!s100 0BK9G2_^Efb77<W7a4aTH1
+IKn6miJSk^=9:<<XmLlXli3
+V8mJEA3PFO5HMnD___h=PN2
+R6
+R7
+R8
+L0 183
+R4
+r1
+!s85 0
+31
+R5
+vrega
+IfEYWSbd^e=NR>7Fk2IA5j2
+V0I<daJSW]4D;<`TG>B;HG2
+R1
+R2
+R3
+L0 32
+R4
+r1
+31
+R5
+!s100 >:I_b:fH;LkPnzO=;3K`:1
+!s85 0
+vregm
+I8Jn3ZDSd`0hA4GMdcd?XB0
+V`a@IaF>2KokcSXn9XTOCI3
+R1
+R2
+R3
+L0 3
+R4
+r1
+31
+R5
+!s100 _bLR;>JAJ<aTGj0B2XFPB0
+!s85 0
+vregq
+I<]mTJ@FD3>T31dKN_<J_W0
+VDN:kCh>4k_gEf0AZDH9>Q0
+R1
+R2
+R3
+L0 17
+R4
+r1
+31
+R5
+!s100 ]6TzQ4z12Ea]Z21:EUg801
+!s85 0
+vtestMultiplier
+I<0E0J1?8<^P09Uee_a[Jf2
+VQHlSDRQL=YISa?>IWRYlL0
+w1742486763
+8testmultiplier.v
+Ftestmultiplier.v
+L0 3
+R4
+r1
+31
+R5
+ntest@multiplier
+!s100 ?iazgk@]iIZ8z]PdnVOgd1
+!s85 0
+vxnor2
+!s100 >9jSF`mj4<JTKC?2FK[<K3
+IL9dJMK<iXhm@9F;gPVXlm2
+V`XUaDW1lh_gHEiFX`IocS1
+R6
+R7
+R8
+L0 462
+R4
+r1
+!s85 0
+31
+R5
+vxor2
+!s100 8]n66QVfJGD?4z52MJzo@3
+IjgPU9W[`=[Lg8d5:>>2gB1
+Vm<<hC_lWF]TV49IHAZJWd1
+R6
+R7
+R8
+L0 395
+R4
+r1
+!s85 0
+31
+R5

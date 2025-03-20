@@ -1,0 +1,52 @@
+  415  ls
+  416  cd synthesis/
+  417  ls
+  418  vi multiplier.v 
+  419  clear
+  420  ls
+  421  source /mgc/Setup.bash 
+  422  cp ../SCP.txt .
+  423  pwd
+  424  vi SCP.txt 
+  425  (source ./SCP.txt )>& Outfile.txt
+  426  more Outfile.txt 
+  427  pwd
+  428  ls
+  429  code SCP.txt 
+  430  (source ./SCP.txt )>& Outfile.txt
+  431  more Outfile.txt 
+  432  vi multiplier.v 
+  433  (source ./SCP.txt )>& Outfile.txt
+  434  more Outfile.txt 
+  435  vi multiplier.v 
+  436  (source ./SCP.txt )>& Outfile.txt
+  437  more Outfile.txt 
+  438  more Proc.v
+  439  clear
+  440  more Proc.v
+  441  vlog Proc.v
+  442  ls
+  443  ls ../
+  444  cp ../testmultiplier.v .
+  445  vlog Proc.v testmultiplier.v 
+  446  vsim -c testmultiplier   // suppress the graphical interface
+  447  vlog Proc.v testmultiplier.v 
+  448  vlog Proc.v testMultiplier.v 
+  449  vlog Proc.v testMultiplier
+  450  ls -l
+  451  vlog testmultiplier.v 
+  452  vsim -t testMultiplier
+  453  vsim -c testMultiplier
+  454  source /mgc/Setup.bash 
+  455  (source ./SCP.txt )>& Outfile.txt
+  456  vi Outfile.txt 
+  457  more Proc.vhd 
+  458  ls
+  459  more Proc.sdf 
+  460  more Proc.edf 
+  461  ls
+  462  vi SCP.txt 
+  463  vi Proc.vhd 
+  464* 
+  465  vlog Proc.v
+  466  history >> hist.txt

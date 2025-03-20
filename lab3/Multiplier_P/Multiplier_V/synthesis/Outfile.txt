@@ -1,0 +1,133 @@
+spectrum: Setting EXEMPLAR to /mgc/Leonardo ...
+Messages will be logged to file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/leospec.log'...
+LeonardoSpectrum Level 3 - 2009a.6 (Release Production Release, compiled Aug 17 2009 at 17:56:52)
+Copyright 1990-2009 Mentor Graphics.  All rights reserved.
+Portions copyright 1991-2009 Compuware Corporation
+
+Checking Security ...
+
+   *** Welcome to Interactive LeonardoSpectrum Level 3 Version 2009a.6 ***
+
+News :
+  * Enter "help" to get an overview of all commands
+  * Enter <command> -help  to get usage of each command
+
+Session history will be logged to file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/leospec.his'
+LEONARDO{1}: Reading library file `/mgc/Leonardo/lib/ami05_typ.syn`...
+Library version = 3.0 Release : Patch (a) : 09/13/04
+Delays assume: Process=typical Temp= 27.0 C  Voltage=5.00 V  
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+LEONARDO{2}: LEONARDO{3}: LEONARDO{3}: -- Reading file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v'...
+-- Loading module 'regm'
+-- Loading module 'regq'
+-- Loading module 'rega'
+-- Loading module 'addsub'
+-- Loading module 'FSM'
+-- Loading module 'multiplier'
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 127: Warning, co is never used.
+-- Compiling root module 'multiplier'
+-- Compiling module regm
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 9: Info, case choices are mutually exclusive; inferring parallel case.
+-- Compiling module regq
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 23: Info, case choices are mutually exclusive; inferring parallel case.
+-- Compiling module rega
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 38: Info, case choices are mutually exclusive; inferring parallel case.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 38: Info, default case is never selected for synthesis.
+-- Compiling module addsub
+-- Compiling module FSM
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 78: Info, default case is never selected for synthesis.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 74: Info, case choices are mutually exclusive; inferring parallel case.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v",line 67: Info, case choices are mutually exclusive; inferring parallel case.
+Info, Command 'read' finished successfully
+LEONARDO{4}: LEONARDO{4}: -- Boundary optimization.
+-- Start pre-optimization for design .work.regm.INTERFACE
+-- Start pre-optimization for design .work.regq.INTERFACE
+-- Start pre-optimization for design .work.rega.INTERFACE
+-- Start pre-optimization for design .work.addsub.INTERFACE_unfold_2088
+-- Start pre-optimization for design .work.FSM.INTERFACE
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 95:Info, Inferred counter instance 'count' of type 'counter_up_cnt_en_sclear_aclear_clock_2'
+-- Start pre-optimization for design .work.multiplier.INTERFACE
+Info, Command 'pre_optimize' finished successfully
+LEONARDO{5}: -- Start pre-optimization for design .work.regm.INTERFACE
+-- Start pre-optimization for design .work.regq.INTERFACE
+-- Start pre-optimization for design .work.rega.INTERFACE
+-- Start pre-optimization for design .work.addsub.INTERFACE_unfold_2088
+-- Start pre-optimization for design .work.FSM.INTERFACE
+-- Start pre-optimization for design .work.multiplier.INTERFACE
+Info, Command 'pre_optimize' finished successfully
+LEONARDO{6}: Info: The target technology was not selected, ami05_typ was automatically selected for you.
+Info, Instances dissolved by autodissolve in View .work.multiplier.INTERFACE
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 115: M_reg (regm)
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 119: Q_reg (regq)
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 123: A_reg (rega)
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 127: addsub_unit (addsub)
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/multiplier.v", line 133: controller (FSM)
+-- Optimizing netlist .work.multiplier.INTERFACE
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Final Design Rule Check..
+Re-checking DRC after adjustments
+Info, Command 'optimize' finished successfully
+LEONARDO{7}: LEONARDO{7}: Info: The target technology was not selected, ami05_typ was automatically selected for you.
+-- Optimizing netlist .work.multiplier.INTERFACE
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Re-checking DRC after adjustments
+Info, Command 'optimize' finished successfully
+LEONARDO{8}: -- Start timing optimization for design .work.multiplier.INTERFACE
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+LEONARDO{9}: Info: setting edif_write_arrays to FALSE
+FALSE
+LEONARDO{10}: LEONARDO{10}: LEONARDO{11}: LEONARDO{12}: -- Writing file Proc.v
+Info, Command 'write' finished successfully
+LEONARDO{13}: LEONARDO{14}: -- Writing file Proc.sdf
+Info, Command 'write' finished successfully
+LEONARDO{15}: CriticalPath
+LEONARDO{16}: 
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                   GATE              ARRIVAL              LOAD
+----------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                 0.00 (ideal)
+
+
+controller_reg_ST(1)/QB                dffr        0.00  0.69 dn             0.04
+ix518/Y                                inv02       0.44  1.13 up             0.14
+ix419/Y                                nor03_2x    0.59  1.72 dn             0.08
+ix417/Y                                nand03      0.69  2.41 up             0.15
+ix483/Y                                xnor2       0.57  2.98 dn             0.05
+ix503/Y                                xnor2       0.40  3.38 up             0.06
+ix111/Y                                inv02       0.18  3.56 dn             0.01
+ix481/Y                                aoi22       0.49  4.05 up             0.06
+ix147/Y                                nor02_2x    0.34  4.39 dn             0.01
+ix149/Y                                ao21        0.58  4.97 dn             0.04
+ix472/Y                                xnor2       0.25  5.23 up             0.02
+ix270/Y                                nor03       0.49  5.71 dn             0.01
+ix272/Y                                ao21        0.57  6.29 dn             0.03
+A_reg_reg_Q3/D                         dff         0.00  6.29 dn             0.00
+data arrival time                                        6.29
+
+
+data required time                                    not specified
+----------------------------------------------------------------------------------
+data required time                                    not specified
+data arrival time                                        6.29
+                                                      ----------
+                                                   unconstrained path
+----------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+LEONARDO{17}: // End >>> /home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/synthesis/ <<<

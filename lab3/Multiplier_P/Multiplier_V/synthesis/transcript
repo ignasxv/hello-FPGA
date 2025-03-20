@@ -1,0 +1,152 @@
+# vsim -c testMultiplier 
+# //  QuestaSim-64 6.5f Jun 16 2010 Linux 5.4.0-208-generic
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.testMultiplier
+# Loading work.multiplier
+# ** Warning: (vsim-3009) [TSCALE] - Module 'multiplier' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut
+# Loading work.dffr
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dffr' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:controller_reg_done
+# Loading work.DFFRS
+# ** Warning: (vsim-3009) [TSCALE] - Module 'DFFRS' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:controller_reg_done:ix1
+# Loading work.nor04
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nor04' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix347
+# Loading work.nand03
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nand03' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix313
+# Loading work.ao21
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ao21' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix394
+# Loading work.xnor2
+# ** Warning: (vsim-3009) [TSCALE] - Module 'xnor2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix413
+# Loading work.dff
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dff' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:Q_reg_reg_Qm1
+# Loading work.mux21_ni
+# ** Warning: (vsim-3009) [TSCALE] - Module 'mux21_ni' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix241
+# Loading work.ao22
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ao22' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix201
+# Loading work.xor2
+# ** Warning: (vsim-3009) [TSCALE] - Module 'xor2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix85
+# Loading work.nand02_2x
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nand02_2x' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix449
+# Loading work.nand04
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nand04' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix464
+# Loading work.nor03
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nor03' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix270
+# Loading work.oai21
+# ** Warning: (vsim-3009) [TSCALE] - Module 'oai21' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix47
+# Loading work.nor02_2x
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nor02_2x' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix147
+# Loading work.aoi22
+# ** Warning: (vsim-3009) [TSCALE] - Module 'aoi22' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix481
+# Loading work.inv02
+# ** Warning: (vsim-3009) [TSCALE] - Module 'inv02' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix111
+# Loading work.buf02
+# ** Warning: (vsim-3009) [TSCALE] - Module 'buf02' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix526
+# Loading work.nor02ii
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nor02ii' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix398
+# Loading work.and04
+# ** Warning: (vsim-3009) [TSCALE] - Module 'and04' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix89
+# Loading work.nor03_2x
+# ** Warning: (vsim-3009) [TSCALE] - Module 'nor03_2x' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix400
+# Loading work.or04
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or04' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix9
+# Loading work.or03
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or03' does not have a `timescale directive in effect, but previous modules do.
+#         Region: :testMultiplier:uut:ix27
+# Clock | Reset | Start | Multiplicand | Multiplier | Product | Done
+#   0   |   1   |   0   |       0      |      0     |     x   |   0
+#   1   |   1   |   0   |       0      |      0     |     x   |   0
+#   0   |   0   |   0   |       0      |      0     |     x   |   0
+#   1   |   0   |   0   |       0      |      0     |     x   |   0
+#   0   |   0   |   1   |       4      |      3     |     x   |   0
+#   1   |   0   |   1   |       4      |      3     |     3   |   0
+#   0   |   0   |   0   |       4      |      3     |     3   |   0
+#   1   |   0   |   0   |       4      |      3     |   195   |   0
+#   0   |   0   |   0   |       4      |      3     |   195   |   0
+#   1   |   0   |   0   |       4      |      3     |   195   |   0
+#   0   |   0   |   0   |       4      |      3     |   195   |   0
+#   1   |   0   |   0   |       4      |      3     |   225   |   0
+#   0   |   0   |   0   |       4      |      3     |   225   |   0
+#   1   |   0   |   0   |       4      |      3     |   225   |   0
+#   0   |   0   |   0   |       4      |      3     |   225   |   0
+#   1   |   0   |   0   |       4      |      3     |   240   |   0
+#   0   |   0   |   0   |       4      |      3     |   240   |   0
+#   1   |   0   |   0   |       4      |      3     |    48   |   0
+#   0   |   0   |   0   |       4      |      3     |    48   |   0
+#   1   |   0   |   0   |       4      |      3     |    48   |   0
+#   0   |   0   |   0   |       4      |      3     |    48   |   0
+#   1   |   0   |   0   |       4      |      3     |    24   |   0
+#   0   |   0   |   0   |       4      |      3     |    24   |   0
+#   1   |   0   |   0   |       4      |      3     |    24   |   0
+#   0   |   0   |   0   |       4      |      3     |    24   |   0
+#   1   |   0   |   0   |       4      |      3     |    12   |   1
+#   0   |   0   |   0   |       4      |      3     |    12   |   1
+#   1   |   0   |   0   |       4      |      3     |    12   |   0
+#   0   |   0   |   0   |       4      |      3     |    12   |   0
+# Test 1: Multiplicand =  4, Multiplier =  3, Product =  12
+#   1   |   0   |   0   |       4      |      3     |    12   |   0
+#   0   |   0   |   0   |       4      |      3     |    12   |   0
+#   1   |   0   |   0   |       4      |      3     |    12   |   0
+#   0   |   0   |   0   |       4      |      3     |    12   |   0
+#   1   |   1   |   0   |       4      |      3     |    12   |   0
+#   0   |   1   |   0   |       4      |      3     |    12   |   0
+#   1   |   0   |   1   |       5      |      7     |     7   |   0
+#   0   |   0   |   1   |       5      |      7     |     7   |   0
+#   1   |   0   |   0   |       5      |      7     |   183   |   0
+#   0   |   0   |   0   |       5      |      7     |   183   |   0
+#   1   |   0   |   0   |       5      |      7     |   183   |   0
+#   0   |   0   |   0   |       5      |      7     |   183   |   0
+#   1   |   0   |   0   |       5      |      7     |   219   |   0
+#   0   |   0   |   0   |       5      |      7     |   219   |   0
+#   1   |   0   |   0   |       5      |      7     |   219   |   0
+#   0   |   0   |   0   |       5      |      7     |   219   |   0
+#   1   |   0   |   0   |       5      |      7     |   237   |   0
+#   0   |   0   |   0   |       5      |      7     |   237   |   0
+#   1   |   0   |   0   |       5      |      7     |   237   |   0
+#   0   |   0   |   0   |       5      |      7     |   237   |   0
+#   1   |   0   |   0   |       5      |      7     |   246   |   0
+#   0   |   0   |   0   |       5      |      7     |   246   |   0
+#   1   |   0   |   0   |       5      |      7     |    70   |   0
+#   0   |   0   |   0   |       5      |      7     |    70   |   0
+#   1   |   0   |   0   |       5      |      7     |    70   |   0
+#   0   |   0   |   0   |       5      |      7     |    70   |   0
+#   1   |   0   |   0   |       5      |      7     |    35   |   1
+#   0   |   0   |   0   |       5      |      7     |    35   |   1
+#   1   |   0   |   0   |       5      |      7     |    35   |   0
+#   0   |   0   |   0   |       5      |      7     |    35   |   0
+# Test 3: Multiplicand =  5, Multiplier =  7, Product =  35
+#   1   |   0   |   0   |       5      |      7     |    35   |   0
+#   0   |   0   |   0   |       5      |      7     |    35   |   0
+#   1   |   0   |   0   |       5      |      7     |    35   |   0
+#   0   |   0   |   0   |       5      |      7     |    35   |   0
+# ** Note: $finish    : testmultiplier.v(75)
+#    Time: 315 ns  Iteration: 0  Instance: :testMultiplier
