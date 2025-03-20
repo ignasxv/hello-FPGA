@@ -21,6 +21,9 @@ module testaddsub;
 
   // Display header (each signal printed as a binary digit)
   initial begin
+      $dumpfile("testaddsub.vcd");
+    $dumpvars(0, testaddsub); 
+    
     $display(" a3a2a1a0  b3b2b1b0  control  |  co r3r2r1r0 ");
     $display("-----------------------------------------");
   end
@@ -32,10 +35,6 @@ module testaddsub;
              b3, b2, b1, b0,
              control,
              co, r3, r2, r1, r0);
-
-
-    $dumpfile("testaddsub.vcd");
-    $dumpvars(0, testaddsub); 
   end
 
   // Apply test cases
