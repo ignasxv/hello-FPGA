@@ -21,17 +21,22 @@ module testaddsub;
 
   // Display header (each signal printed as a binary digit)
   initial begin
-    $display(" a3a2a1a0  b3b2b1b0  control  |  co r3r2r1r0 ");
+      $dumpfile("testaddsub.vcd");
+    $dumpvars(0, testaddsub); 
+
+    $display(" a3a2a1a0  b3b2b1b0  control  |  co r3r2r1r0 | num1 | num2 ");
     $display("-----------------------------------------");
   end
 
   // Monitor the signals (each concatenated for clarity)
   initial begin
-    $monitor("   %b%b%b%b     %b%b%b%b      %b     |   %b %b%b%b%b",
+    assign reg num1 = {a3, a2, a1, a0};
+    assign reg num2 = {b3, b2, b1, b0};
+    $monitor("   %b%b%b%b     %b%b%b%b      %b     |   %b %b%b%b%b | %d | %d",
              a3, a2, a1, a0,
              b3, b2, b1, b0,
              control,
-             co, r3, r2, r1, r0);
+             co, r3, r2, r1, r0, num1, num2);
   end
 
   // Apply test cases
@@ -71,9 +76,9 @@ module testaddsub;
     // so r3r2r1r0 = 0000 and co = 1.
     a3 = 0; a2 = 1; a1 = 1; a0 = 0;  // 0110
     b3 = 1; b2 = 0; b1 = 1; b0 = 0;  // 1010
-    control = 0;                   // Addition mode
-    #10;
+    control = 0;                   // Addition mode$
 
+    #10;
     $finish;
   end
 
