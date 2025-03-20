@@ -32,6 +32,10 @@ module testaddsub;
              b3, b2, b1, b0,
              control,
              co, r3, r2, r1, r0);
+
+
+    $dumpfile("testaddsub.vcd");
+    $dumpvars(0, testaddsub); 
   end
 
   // Apply test cases
@@ -71,10 +75,10 @@ module testaddsub;
     // so r3r2r1r0 = 0000 and co = 1.
     a3 = 0; a2 = 1; a1 = 1; a0 = 0;  // 0110
     b3 = 1; b2 = 0; b1 = 1; b0 = 0;  // 1010
-    control = 0;                   // Addition mode
-    #10;
+    control = 0;                   // Addition mode$
 
-    $finish;
+    #10;
+    #50 $finish;
   end
 
 endmodule
