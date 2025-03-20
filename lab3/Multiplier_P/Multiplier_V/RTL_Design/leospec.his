@@ -1,7 +1,7 @@
 #
 #
 # /mgc/Leonardo/bin/Linux/spectrum 
-# Thu Mar 20 17:35:46 2025
+# Thu Mar 20 17:47:13 2025
 read  /mgc/Leonardo/lib/ami05_typ.syn
 
 #read /mgc/Leonardo/lib/tsmc035_typ.syn
@@ -38,7 +38,9 @@ optimize_timing .work.RTL_multiply.INTERFACE
 
 set edif_write_arrays FALSE
 
+2
 
+### Previous Command Failed
 
 #write -downto PRIMITIVES -format vhdl   Proc.vhd
 

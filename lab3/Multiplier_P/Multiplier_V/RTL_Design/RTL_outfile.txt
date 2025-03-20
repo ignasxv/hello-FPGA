@@ -30,8 +30,9 @@ LEONARDO{7}: LEONARDO{7}: Info: The target technology was not selected, ami05_ty
 LEONARDO{8}: .work.RTL_multiply.INTERFACE not found
 LEONARDO{9}: Info: setting edif_write_arrays to FALSE
 FALSE
-LEONARDO{10}: LEONARDO{10}: LEONARDO{11}: LEONARDO{12}: write: present design is not set to a view
-LEONARDO{13}: LEONARDO{14}: write: present design is not set to a view
-LEONARDO{15}: CriticalPath
-LEONARDO{16}: report_delay: present design is not a view; cannot report delay
-LEONARDO{17}: // End >>> /home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/ <<<
+LEONARDO{10}: unknown command "2"
+LEONARDO{11}: LEONARDO{12}: LEONARDO{13}: write: present design is not set to a view
+LEONARDO{14}: LEONARDO{15}: write: present design is not set to a view
+LEONARDO{16}: CriticalPath
+LEONARDO{17}: report_delay: present design is not a view; cannot report delay
+LEONARDO{18}: // End >>> /home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/ <<<

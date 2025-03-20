@@ -30,6 +30,7 @@ Info: The target technology was not selected, ami05_typ was automatically select
 .work.RTL_multiply.INTERFACE not found
 Info: setting edif_write_arrays to FALSE
 FALSE
+unknown command "2"
 write: present design is not set to a view
 write: present design is not set to a view
 CriticalPath

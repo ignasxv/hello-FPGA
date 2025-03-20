@@ -22,7 +22,7 @@ optimize -macro -auto -effort quick -hierarchy auto
 optimize .work.RTL_multiply.INTERFACE -macro -auto -effort quick -hierarchy auto
 optimize_timing .work.RTL_multiply.INTERFACE
 set edif_write_arrays FALSE
-
+2
 #write -downto PRIMITIVES -format vhdl   Proc.vhd
 #write -downto PRIMITIVES -format edif   Proc.edf
 write -downto PRIMITIVES -format verilog  Proc.v

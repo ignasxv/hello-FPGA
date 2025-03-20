@@ -18,7 +18,6 @@ r1
 Z3 o-L mtiAvm -L mtiOvm -L mtiUPF
 n@r@t@l_multiply
 vtestRTL_multiply
-!s100 4Nbf:8Di8:^PX9=C6VWB@2
 ICKR@Od0IfPaabhTzUdARg1
 V1bce4cG5E@K2K`T;fLnEC0
 R1
@@ -27,7 +26,8 @@ FtestRTL_multiplier.v
 L0 3
 R2
 r1
-!s85 0
 31
 R3
 ntest@r@t@l_multiply
+!s100 4Nbf:8Di8:^PX9=C6VWB@2
+!s85 0
