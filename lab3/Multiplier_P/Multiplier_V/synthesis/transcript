@@ -82,6 +82,10 @@
 # Loading work.or03
 # ** Warning: (vsim-3009) [TSCALE] - Module 'or03' does not have a `timescale directive in effect, but previous modules do.
 #         Region: :testMultiplier:uut:ix27
+# Unknown option: -all
+# ** Error: (vsim-4005) Invalid argument '--all'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+# Invalid time value: all
 # Clock | Reset | Start | Multiplicand | Multiplier | Product | Done
 #   0   |   1   |   0   |       0      |      0     |     x   |   0
 #   1   |   1   |   0   |       0      |      0     |     x   |   0
