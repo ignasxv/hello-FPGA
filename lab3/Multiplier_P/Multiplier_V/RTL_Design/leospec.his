@@ -1,0 +1,64 @@
+#
+#
+# /mgc/Leonardo/bin/Linux/spectrum 
+# Thu Mar 20 17:35:46 2025
+read  /mgc/Leonardo/lib/ami05_typ.syn
+
+#read /mgc/Leonardo/lib/tsmc035_typ.syn
+
+
+
+read {/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v}
+
+### Previous Command Failed
+
+
+
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize
+
+### Previous Command Failed
+
+pre_optimize -extract
+
+### Previous Command Failed
+
+optimize -macro -auto -effort quick -hierarchy auto
+
+### Previous Command Failed
+
+
+
+optimize .work.RTL_multiply.INTERFACE -macro -auto -effort quick -hierarchy auto
+
+### Previous Command Failed
+
+optimize_timing .work.RTL_multiply.INTERFACE
+
+### Previous Command Failed
+
+set edif_write_arrays FALSE
+
+
+
+#write -downto PRIMITIVES -format vhdl   Proc.vhd
+
+#write -downto PRIMITIVES -format edif   Proc.edf
+
+write -downto PRIMITIVES -format verilog  Proc.v
+
+### Previous Command Failed
+
+#write -format verilog  Proc.v
+
+write -format SDF -downto PRIMITIVES Proc.sdf
+
+### Previous Command Failed
+
+set report_file_name CriticalPath
+
+report_delay -num_paths 1 -show_schematic 1 -critical_paths 
+
+### Previous Command Failed
+
+exit
+
