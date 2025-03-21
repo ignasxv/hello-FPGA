@@ -1,0 +1,38 @@
+spectrum: Setting EXEMPLAR to /mgc/Leonardo ...
+Messages will be logged to file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/leospec.log'...
+LeonardoSpectrum Level 3 - 2009a.6 (Release Production Release, compiled Aug 17 2009 at 17:56:52)
+Copyright 1990-2009 Mentor Graphics.  All rights reserved.
+Portions copyright 1991-2009 Compuware Corporation
+
+Checking Security ...
+
+   *** Welcome to Interactive LeonardoSpectrum Level 3 Version 2009a.6 ***
+
+News :
+  * Enter "help" to get an overview of all commands
+  * Enter <command> -help  to get usage of each command
+
+Session history will be logged to file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/leospec.his'
+LEONARDO{1}: Reading library file `/mgc/Leonardo/lib/ami05_typ.syn`...
+Library version = 3.0 Release : Patch (a) : 09/13/04
+Delays assume: Process=typical Temp= 27.0 C  Voltage=5.00 V  
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+LEONARDO{2}: LEONARDO{3}: LEONARDO{3}: -- Reading file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v'...
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 4: Error, syntax error near: input <-
+Error(s) found in Verilog source.
+LEONARDO{4}: LEONARDO{4}: pre_optimize: design is not a view
+LEONARDO{5}: pre_optimize: design is not a view
+LEONARDO{6}: Info: The target technology was not selected, ami05_typ was automatically selected for you.
+optimize: design is not a view
+LEONARDO{7}: LEONARDO{7}: Info: The target technology was not selected, ami05_typ was automatically selected for you.
+.work.RTL_multiply.INTERFACE not found
+LEONARDO{8}: .work.RTL_multiply.INTERFACE not found
+LEONARDO{9}: Info: setting edif_write_arrays to FALSE
+FALSE
+LEONARDO{10}: unknown command "2"
+LEONARDO{11}: LEONARDO{12}: LEONARDO{13}: write: present design is not set to a view
+LEONARDO{14}: LEONARDO{15}: write: present design is not set to a view
+LEONARDO{16}: CriticalPath
+LEONARDO{17}: report_delay: present design is not a view; cannot report delay
+LEONARDO{18}: // End >>> /home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/ <<<

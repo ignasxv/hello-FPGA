@@ -47,6 +47,6 @@
   461  ls
   462  vi SCP.txt 
   463  vi Proc.vhd 
-  464* 
+  464 
   465  vlog Proc.v
   466  history >> hist.txt
