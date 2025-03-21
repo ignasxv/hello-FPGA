@@ -58,7 +58,7 @@ module test_RTL_multiply;
         multiplier = 4'd9;
         start = 1;
         #10;
-        start = 0;
+        start = 0; 
         
         // Wait until multiplication is done
         wait(done == 1);
