@@ -6,20 +6,20 @@
 #the output is sent to stdout
 #
 
-cktdir=/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V
+cktdir=/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design
 
 elsyn << //EOF
 read  /mgc/Leonardo/lib/ami05_typ.syn
 #read /mgc/Leonardo/lib/tsmc035_typ.syn
 
-read {$cktdir/multiplier.v}
+read {$cktdir/RTL_multiplier.v} 
 
 pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize
 pre_optimize -extract
 optimize -macro -auto -effort quick -hierarchy auto
 
-optimize .work.multiplier.INTERFACE -macro -auto -effort quick -hierarchy auto
-optimize_timing .work.multiplier.INTERFACE
+optimize .work.RTL_multiply.INTERFACE -macro -auto -effort quick -hierarchy auto
+optimize_timing .work.RTL_multiply.INTERFACE
 set edif_write_arrays FALSE
 
 write -downto PRIMITIVES -format vhdl   Proc.vhd
