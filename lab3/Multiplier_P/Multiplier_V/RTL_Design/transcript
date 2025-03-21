@@ -11,20 +11,3 @@
 # //
 # Loading work.testRTL_multiply
 # Loading work.RTL_multiply
-#  reset | start | multiplicand | multiplier | product | done
-#    1   |   0   |       0       |      0     |     0   |  0
-#    0   |   0   |       0       |      0     |     0   |  0
-#    0   |   1   |       4       |      3     |     0   |  0
-#    0   |   0   |       4       |      3     |     0   |  0
-#    0   |   0   |       4       |      3     |    12   |  1
-# Test 1:  4 *  3 =  12
-#    0   |   0   |       4       |      3     |    12   |  0
-#    1   |   0   |       4       |      3     |     0   |  0
-#    0   |   0   |       4       |      3     |     0   |  0
-#    0   |   1   |       7       |      9     |     0   |  0
-#    0   |   0   |       7       |      9     |     0   |  0
-#    0   |   0   |       7       |      9     |    63   |  1
-# Test 2:  7 *  9 =  63
-#    0   |   0   |       7       |      9     |    63   |  0
-# ** Note: $finish    : testRTL_multiplier.v(69)
-#    Time: 185 ns  Iteration: 0  Instance: :testRTL_multiply
