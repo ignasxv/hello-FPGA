@@ -62,11 +62,7 @@ module test_RTL_multiply;
         multiplier = 4'd9;
         start = 1;
         #10;
-<<<<<<< HEAD
-        start = 0; 
-=======
         start = 0;
->>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
         
         // Wait until multiplication is done
         wait(done == 1);
