@@ -10,25 +10,42 @@ module RTL_multiply(
     output reg   done
 );
     // Internal registers:
-    reg [1:0] count;        // 3-bit counter (we need 4 cycles for a 4-bit multiplier)
+    reg [7:0] P;            // Product register, holds intermediate result.
+    reg [2:0] count;        // 3-bit counter (we need 4 cycles for a 4-bit multiplier)
+    reg busy;               // Indicates a multiplication is in progress.
+    reg [7:0] next_P;       // Temporary variable for calculating the next value of P.
     
-    assign busy = (count==0?0:1);
-
-    always @(posedge clk ) 
-    begin
-        if (start) begin
-            product = {4'b0, multiplier};
-            count   = 2'd3;
-	    P_1 = 0;
-        end else 
-	    if (busy!=1) begin
-            	case( {product[0],P_1} )
-		    2'b00, 2'b11: ;
-		    2'b01: product[7:4] = product[7:4] + multiplicand;
-		    2'b10: product[7:4] = product[7:4] - multiplicand;
-            	endcase
-		{product,P_1} =  {product[n],product}>>1;
-            	count <= count - 1;
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            P       <= 8'b0;
+            count   <= 3'b0;
+            busy    <= 1'b0;
+            product <= 8'b0;
+            done    <= 1'b0;
+        end else if (start && !busy) begin
+            // Start the multiplication: load P with {0, multiplier}.
+            P       <= {4'b0, multiplier};
+            count   <= 3'b0;
+            busy    <= 1'b1;
+            done    <= 1'b0;
+        end else if (busy) begin
+            // Compute next value of P:
+            next_P = P;   // Copy current value
+            // If the least significant bit is 1, add multiplicand to upper nibble.
+            if (P[0] == 1'b1)
+                next_P[7:4] = next_P[7:4] + multiplicand;
+            // Logical right shift by one bit.
+            next_P = {1'b0, next_P[7:1]};
+            P <= next_P;
+            count <= count + 1;
+            // If we've completed 4 iterations, finish the multiplication.
+            if (count == 3'd3) begin
+                busy <= 1'b0;
+                product <= next_P;
+                done <= 1'b1;
             end
+        end else begin
+            done <= 1'b0; // Ensure done remains low when not busy.
+        end
     end
 endmodule

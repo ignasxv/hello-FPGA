@@ -4,7 +4,6 @@ K3
 cModel Technology
 Z0 d/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design
 vRTL_multiply
-!s100 7Zi5nYLXKcP[AK;z>hzCg3
 ImX1F6ae:4id43J`<TL6EP2
 VoV?JUg9YG4e?<jaiHD]cW3
 w1742551851
@@ -13,12 +12,12 @@ FRTL_multiplier.v
 L0 3
 Z1 OL;L;6.5f;42
 r1
-!s85 0
 31
 Z2 o-L mtiAvm -L mtiOvm -L mtiUPF
 n@r@t@l_multiply
+!s100 7Zi5nYLXKcP[AK;z>hzCg3
+!s85 0
 vtestRTL_multiply
-!s100 mL6Lh<OKm<zBG:W<O_DY`0
 IWCo1dI0]Yo9VC@>cZSf>f2
 V1bce4cG5E@K2K`T;fLnEC0
 w1742552810
@@ -27,7 +26,8 @@ FtestRTL_multiplier.v
 L0 3
 R1
 r1
-!s85 0
 31
 R2
 ntest@r@t@l_multiply
+!s100 mL6Lh<OKm<zBG:W<O_DY`0
+!s85 0

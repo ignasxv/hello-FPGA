@@ -1,6 +1,10 @@
 `timescale 1ns/1ps
 
+<<<<<<< HEAD
 module testRTL_multiply;
+=======
+module test_RTL_multiply;
+>>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
     // Inputs
     reg clk, reset, start;
     reg [3:0] multiplicand, multiplier;
@@ -58,7 +62,11 @@ module testRTL_multiply;
         multiplier = 4'd9;
         start = 1;
         #10;
+<<<<<<< HEAD
         start = 0; 
+=======
+        start = 0;
+>>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
         
         // Wait until multiplication is done
         wait(done == 1);
