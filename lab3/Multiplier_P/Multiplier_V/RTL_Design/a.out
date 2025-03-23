@@ -8,6 +8,7 @@
 :vpi_module "/usr/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/ivl/va_math.vpi";
 <<<<<<< HEAD
+<<<<<<< HEAD
 S_0x6003618f4480 .scope module, "test_RTL_multiply" "test_RTL_multiply" 2 3;
  .timescale -9 -12;
 v0x600361921660_0 .var "clk", 0 0;
@@ -32,6 +33,9 @@ v0x61453cd79b00_0 .var "start", 0 0;
 E_0x61453cd1f970 .event anyedge, v0x61453cd78f70_0;
 S_0x61453cd5dd10 .scope module, "uut" "RTL_multiply" 2 12, 3 3 0, S_0x61453cd4c480;
 >>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
+=======
+S_0x6442f5ce9290 .scope module, "RTL_multiply" "RTL_multiply" 2 3;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk";
     .port_info 1 /INPUT 1 "reset";
@@ -40,6 +44,7 @@ S_0x61453cd5dd10 .scope module, "uut" "RTL_multiply" 2 12, 3 3 0, S_0x61453cd4c4
     .port_info 4 /INPUT 4 "multiplier";
     .port_info 5 /OUTPUT 8 "product";
     .port_info 6 /OUTPUT 1 "done";
+<<<<<<< HEAD
 <<<<<<< HEAD
 v0x6003618f1450_0 .var "P", 7 0;
 v0x600361920d30_0 .var "busy", 0 0;
@@ -90,35 +95,60 @@ v0x61453cd79400_0 .net "reset", 0 0, v0x61453cd79a30_0;  1 drivers
 v0x61453cd794c0_0 .net "start", 0 0, v0x61453cd79b00_0;  1 drivers
 E_0x61453cd58ca0 .event posedge, v0x61453cd79400_0, v0x61453cd78df0_0;
     .scope S_0x61453cd5dd10;
+=======
+v0x6442f5ce94d0_0 .var "P", 7 0;
+v0x6442f5d37e70_0 .var "busy", 0 0;
+o0x78057c313078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6442f5d37f30_0 .net "clk", 0 0, o0x78057c313078;  0 drivers
+v0x6442f5d37fd0_0 .var "count", 2 0;
+v0x6442f5d380b0_0 .var "done", 0 0;
+o0x78057c313108 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x6442f5d381c0_0 .net "multiplicand", 3 0, o0x78057c313108;  0 drivers
+o0x78057c313138 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x6442f5d382a0_0 .net "multiplier", 3 0, o0x78057c313138;  0 drivers
+v0x6442f5d38380_0 .var "next_P", 7 0;
+v0x6442f5d38460_0 .var "product", 7 0;
+o0x78057c3131c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6442f5d38540_0 .net "reset", 0 0, o0x78057c3131c8;  0 drivers
+o0x78057c3131f8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6442f5d38600_0 .net "start", 0 0, o0x78057c3131f8;  0 drivers
+E_0x6442f5ce9bc0 .event posedge, v0x6442f5d38540_0, v0x6442f5d37f30_0;
+    .scope S_0x6442f5ce9290;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
 T_0 ;
-    %wait E_0x61453cd58ca0;
-    %load/vec4 v0x61453cd79400_0;
+    %wait E_0x6442f5ce9bc0;
+    %load/vec4 v0x6442f5d38540_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.0, 8;
     %pushi/vec4 0, 0, 8;
-    %assign/vec4 v0x61453cd49450_0, 0;
+    %assign/vec4 v0x6442f5ce94d0_0, 0;
     %pushi/vec4 0, 0, 3;
-    %assign/vec4 v0x61453cd78e90_0, 0;
+    %assign/vec4 v0x6442f5d37fd0_0, 0;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0x61453cd78d30_0, 0;
+    %assign/vec4 v0x6442f5d37e70_0, 0;
     %pushi/vec4 0, 0, 8;
-    %assign/vec4 v0x61453cd79320_0, 0;
+    %assign/vec4 v0x6442f5d38460_0, 0;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0x61453cd78f70_0, 0;
+    %assign/vec4 v0x6442f5d380b0_0, 0;
     %jmp T_0.1;
 T_0.0 ;
-    %load/vec4 v0x61453cd794c0_0;
+    %load/vec4 v0x6442f5d38600_0;
     %flag_set/vec4 9;
     %flag_get/vec4 9;
     %jmp/0 T_0.4, 9;
+<<<<<<< HEAD
     %load/vec4 v0x61453cd78d30_0;
 >>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
+=======
+    %load/vec4 v0x6442f5d37e70_0;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
     %nor/r;
     %and;
 T_0.4;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.2, 8;
     %pushi/vec4 0, 0, 4;
+<<<<<<< HEAD
 <<<<<<< HEAD
     %load/vec4 v0x600361921160_0;
     %concat/vec4; draw_concat_vec4
@@ -169,67 +199,79 @@ T_0.7 ;
     %assign/vec4 v0x600361920f70_0, 0;
 =======
     %load/vec4 v0x61453cd79160_0;
+=======
+    %load/vec4 v0x6442f5d382a0_0;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
     %concat/vec4; draw_concat_vec4
-    %assign/vec4 v0x61453cd49450_0, 0;
+    %assign/vec4 v0x6442f5ce94d0_0, 0;
     %pushi/vec4 0, 0, 3;
-    %assign/vec4 v0x61453cd78e90_0, 0;
+    %assign/vec4 v0x6442f5d37fd0_0, 0;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v0x61453cd78d30_0, 0;
+    %assign/vec4 v0x6442f5d37e70_0, 0;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0x61453cd78f70_0, 0;
+    %assign/vec4 v0x6442f5d380b0_0, 0;
     %jmp T_0.3;
 T_0.2 ;
-    %load/vec4 v0x61453cd78d30_0;
+    %load/vec4 v0x6442f5d37e70_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.5, 8;
-    %load/vec4 v0x61453cd49450_0;
-    %store/vec4 v0x61453cd79240_0, 0, 8;
-    %load/vec4 v0x61453cd49450_0;
+    %load/vec4 v0x6442f5ce94d0_0;
+    %store/vec4 v0x6442f5d38380_0, 0, 8;
+    %load/vec4 v0x6442f5ce94d0_0;
     %parti/s 1, 0, 2;
     %cmpi/e 1, 0, 1;
     %jmp/0xz  T_0.7, 4;
-    %load/vec4 v0x61453cd79240_0;
+    %load/vec4 v0x6442f5d38380_0;
     %parti/s 4, 4, 4;
-    %load/vec4 v0x61453cd79080_0;
+    %load/vec4 v0x6442f5d381c0_0;
     %add;
     %ix/load 4, 4, 0;
     %flag_set/imm 4, 0;
-    %store/vec4 v0x61453cd79240_0, 4, 4;
+    %store/vec4 v0x6442f5d38380_0, 4, 4;
 T_0.7 ;
     %pushi/vec4 0, 0, 1;
-    %load/vec4 v0x61453cd79240_0;
+    %load/vec4 v0x6442f5d38380_0;
     %parti/s 7, 1, 2;
     %concat/vec4; draw_concat_vec4
-    %store/vec4 v0x61453cd79240_0, 0, 8;
-    %load/vec4 v0x61453cd79240_0;
-    %assign/vec4 v0x61453cd49450_0, 0;
-    %load/vec4 v0x61453cd78e90_0;
+    %store/vec4 v0x6442f5d38380_0, 0, 8;
+    %load/vec4 v0x6442f5d38380_0;
+    %assign/vec4 v0x6442f5ce94d0_0, 0;
+    %load/vec4 v0x6442f5d37fd0_0;
     %addi 1, 0, 3;
-    %assign/vec4 v0x61453cd78e90_0, 0;
-    %load/vec4 v0x61453cd78e90_0;
+    %assign/vec4 v0x6442f5d37fd0_0, 0;
+    %load/vec4 v0x6442f5d37fd0_0;
     %cmpi/e 3, 0, 3;
     %jmp/0xz  T_0.9, 4;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0x61453cd78d30_0, 0;
-    %load/vec4 v0x61453cd79240_0;
-    %assign/vec4 v0x61453cd79320_0, 0;
+    %assign/vec4 v0x6442f5d37e70_0, 0;
+    %load/vec4 v0x6442f5d38380_0;
+    %assign/vec4 v0x6442f5d38460_0, 0;
     %pushi/vec4 1, 0, 1;
+<<<<<<< HEAD
     %assign/vec4 v0x61453cd78f70_0, 0;
 >>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
+=======
+    %assign/vec4 v0x6442f5d380b0_0, 0;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
 T_0.9 ;
     %jmp T_0.6;
 T_0.5 ;
     %pushi/vec4 0, 0, 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
     %assign/vec4 v0x600361920f70_0, 0;
 =======
     %assign/vec4 v0x61453cd78f70_0, 0;
 >>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
+=======
+    %assign/vec4 v0x6442f5d380b0_0, 0;
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
 T_0.6 ;
 T_0.3 ;
 T_0.1 ;
     %jmp T_0;
     .thread T_0;
+<<<<<<< HEAD
 <<<<<<< HEAD
     .scope S_0x6003618f4480;
 T_1 ;
@@ -398,9 +440,10 @@ T_3 ;
 >>>>>>> d12e2a4401f9228188c8c5807c4391515330296d
     %end;
     .thread T_3;
+=======
+>>>>>>> 7100060 (FIX: restore working + more descriptive rtl design)
 # The file index is used to find the file name in the following table.
-:file_names 4;
+:file_names 3;
     "N/A";
     "<interactive>";
-    "testRTL_multiplier.v";
     "RTL_multiplier.v";
