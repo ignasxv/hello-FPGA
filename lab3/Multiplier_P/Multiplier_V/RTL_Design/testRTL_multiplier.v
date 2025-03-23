@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 
 module testRTL_multiply;
-    // Inputs
+    // Inputs 2
     reg clk, reset, start;
     reg [3:0] multiplicand, multiplier;
     // Outputs
