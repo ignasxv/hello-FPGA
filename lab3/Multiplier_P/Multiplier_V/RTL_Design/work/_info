@@ -3,31 +3,292 @@ K3
 13
 cModel Technology
 Z0 d/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design
+vao21
+!s100 o]2He4YlB:lGzaY`[25c@1
+I`13e8b7@Nk:f^Fa_MB5ek1
+VUzI6_`Nf1i_@5>;i:f?Wk3
+Z1 w1742736680
+Z2 8Proc.v
+Z3 FProc.v
+L0 234
+Z4 OL;L;6.5f;42
+r1
+!s85 0
+31
+Z5 o-L mtiAvm -L mtiOvm -L mtiUPF
+vao22
+!s100 >MRSDFROPBT=b<afM6DRa0
+IGjC>]8TA=UHiKAQNC[?dV2
+VCNT>McfnUEV3O69cGG5=Y1
+R1
+R2
+R3
+L0 363
+R4
+r1
+!s85 0
+31
+R5
+vao32
+!s100 bhO<U?LD;zTU3`8E>n9]Y3
+IUiJfL;69i>YBlm<1BaKOM0
+V0T[kg_jR>7QV^GJZ`jY7a0
+R1
+R2
+R3
+L0 330
+R4
+r1
+!s85 0
+31
+R5
+vaoi32
+!s100 1SGg@X:1BeZ1CWKPzSHD03
+I=5]WNAiEVhjY<l8gm2F>;1
+V9=HIzgYCN]?4Vn::alYO;2
+R1
+R2
+R3
+L0 250
+R4
+r1
+!s85 0
+31
+R5
+vbuf02
+!s100 mDUiH?<Sn=D?oHdJ1meG42
+I3JLS2NYFZN28hDX;]NQXQ0
+Ve5U[CQg6DnbTd5cWn2VOz1
+R1
+R2
+R3
+L0 188
+R4
+r1
+!s85 0
+31
+R5
+vdffr
+!s100 n;A4>ZEd[[RgXk2Xhaoel2
+I2D:5gokPG;H>PhMZ?AR^D1
+VnXgI8mKNX1gYd9`:lMhOi0
+R1
+R2
+R3
+L0 434
+R4
+r1
+!s85 0
+31
+R5
+vDFFRS
+!s100 GU0lHC`11BeBJ?G?YJ7A02
+IVH^[NSPn6Y64_VMTN]0hP1
+Vb8^S9kRbzel]C2ZjU0aka0
+R1
+R2
+R3
+L0 452
+R4
+r1
+!s85 0
+31
+R5
+n@d@f@f@r@s
+vfake_gnd
+!s100 2P3Ol1zW4joBM9m4>B_nj3
+IZFe53h_cnIbjF^@W_gQIg0
+VLG>kVhD?R]kPX_X1_NNLo0
+R1
+R2
+R3
+L0 472
+R4
+r1
+!s85 0
+31
+R5
+vinv02
+!s100 D0B7^nQQ0nn19@`_JF<fO2
+I^XaPl5bIWb_@[9:f2Y^983
+VQl7nThc@:0dlm>RDMAY[`3
+R1
+R2
+R3
+L0 200
+R4
+r1
+!s85 0
+31
+R5
+vmux21_ni
+!s100 >Hh6?1ANKlnZ19E^_>9D?0
+I;S3UeK6Jco>IIG1lSKkdE0
+VH18XhKHk_EK6]^Xf6m=]W2
+R1
+R2
+R3
+L0 416
+R4
+r1
+!s85 0
+31
+R5
+vnand02_2x
+!s100 MeSS<:;M81;T`RS8YSa5T0
+Ige1PE1@T=<15eiGa3R6il1
+V_TgGEO`V^FWg6TIjRSlUi1
+R1
+R2
+R3
+L0 400
+R4
+r1
+!s85 0
+31
+R5
+vnor02_2x
+!s100 7E`2Y_3jjoi2E^e`Y:G7e1
+IH@7z1LBOmaTC_oGVJ6kS_0
+VY9U<]N`IN5k9gejiHK;@X2
+R1
+R2
+R3
+L0 131
+R4
+r1
+!s85 0
+31
+R5
+vnor02ii
+!s100 eZ_OcVJ<B_GIaL_HNK^4j1
+IkZa^30dcL6Z5WL8VCdH:[3
+V`S67?P8>=;a6RFjlP0i480
+R1
+R2
+R3
+L0 147
+R4
+r1
+!s85 0
+31
+R5
+vnor04
+!s100 ARbI`EJ[KJ?n4APMka2_<0
+I9NdN_0`8UAMMIbX9WaJIF1
+VhPid341mLlVcQkS?WDJLO1
+R1
+R2
+R3
+L0 212
+R4
+r1
+!s85 0
+31
+R5
+voai21
+!s100 lNMXH`l@KAg[oY0BHA@OA0
+I20>DX4d_Y?85N_VVkDNXZ1
+V@MbM68fLmB=9WaeiiHc8W0
+R1
+R2
+R3
+L0 381
+R4
+r1
+!s85 0
+31
+R5
+voai22
+!s100 VB0beoL9E@NjNi3AUnZ<U2
+IBHj^nIILGf[6d?zgkf8hX1
+V3[D]Ehl_k1NDhPdZHl1Bd2
+R1
+R2
+R3
+L0 308
+R4
+r1
+!s85 0
+31
+R5
+voai32
+!s100 oQWj9D[co2aUclI3eM`BY1
+IGiNiFZQDAj?;d[4zEmh]h3
+VobLTV5SI;T4UVOFKAadkf0
+R1
+R2
+R3
+L0 283
+R4
+r1
+!s85 0
+31
+R5
+vor02
+!s100 7cZLNM_91ZW4^]bT<MeYQ0
+Ik^U5Rk_EB>Y6<nK@=XgeA0
+V:BYf=e2i[1D<?8Gd3`DV22
+R1
+R2
+R3
+L0 175
+R4
+r1
+!s85 0
+31
+R5
 vRTL_multiply
 !s100 7Zi5nYLXKcP[AK;z>hzCg3
 ImX1F6ae:4id43J`<TL6EP2
 VoV?JUg9YG4e?<jaiHD]cW3
-w1742735950
+w1742738073
 8RTL_multiplier.v
 FRTL_multiplier.v
 L0 3
-Z1 OL;L;6.5f;42
+R4
 r1
 !s85 0
 31
-Z2 o-L mtiAvm -L mtiOvm -L mtiUPF
+R5
 n@r@t@l_multiply
 vtestRTL_multiply
 !s100 mL6Lh<OKm<zBG:W<O_DY`0
 IWCo1dI0]Yo9VC@>cZSf>f2
 V1bce4cG5E@K2K`T;fLnEC0
-w1742736040
+w1742736296
 8testRTL_multiplier.v
 FtestRTL_multiplier.v
 L0 3
-R1
+R4
 r1
 !s85 0
 31
-R2
+R5
 ntest@r@t@l_multiply
+vxnor2
+!s100 kY23JBc>;[;cAVima?_k13
+I30`ZC9BKPB]7Q1Az07ZFZ0
+V`XUaDW1lh_gHEiFX`IocS1
+R1
+R2
+R3
+L0 350
+R4
+r1
+!s85 0
+31
+R5
+vxor2
+!s100 ZN`]@38KaNAL=X=m_JaUe1
+IEZM8KT[OdzCMMK>QXBlGH3
+Vm<<hC_lWF]TV49IHAZJWd1
+R1
+R2
+R3
+L0 162
+R4
+r1
+!s85 0
+31
+R5

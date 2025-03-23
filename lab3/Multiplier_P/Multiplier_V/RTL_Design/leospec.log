@@ -19,7 +19,10 @@ Delays assume: Process=typical Temp= 27.0 C  Voltage=5.00 V
 Info: setting encoding to auto
 Info, Command 'load_library' finished successfully
 -- Reading file '/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v'...
-"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 4: Error, syntax error near: input <-
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 21: Error, illegal use of 'wire' for symbol 'busy'.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 27: Error, illegal use of 'wire' for symbol 'busy'.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 37: Error, illegal use of 'wire' for symbol 'busy'.
+"/home/iak36/hello-FPGA/lab3/Multiplier_P/Multiplier_V/RTL_Design/RTL_multiplier.v", line 37: Error, illegal use of 'wire' for symbol 'busy'.
 Error(s) found in Verilog source.
 pre_optimize: design is not a view
 pre_optimize: design is not a view
